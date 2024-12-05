@@ -1,0 +1,16 @@
+
+Licença Liberal Axolotl (2024)
+
+Ao utilizar/modificar  o software [nome do seu projeto], você concorda com os seguintes termos da licença:
+
+1. Todas as distribuições e derivados deste código devem ser disponibilizados como código aberto.
+
+
+2. Todas as versões e disposições devem utilizar esta Licença 0.
+
+
+3. O nome original do desenvolvedor deve ser devidamente mencionado em todas as distribuições.
+
+
+
+

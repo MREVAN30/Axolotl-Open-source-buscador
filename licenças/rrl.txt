@@ -1,0 +1,19 @@
+
+Licença Restritiva Axolotl (2024)
+
+Ao utilizar o software [nome do seu projeto], você concorda com os seguintes termos da licença:
+
+1. É estritamente proibido redistribuir ou criar derivados deste código sem autorização prévia por escrito do detentor dos direitos autorais.
+
+
+2. Qualquer uso comercial do software requer uma licença adicional.
+
+
+3. O nome original do desenvolvedor deve ser mencionado em qualquer forma de divulgação relacionada ao software.
+
+
+4. Modificações no código fonte não podem ser compartilhadas publicamente.
+
+
+
+

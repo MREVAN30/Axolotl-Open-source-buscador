@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axolotl.dev - Motor de Busca</title>
+    <link rel="icon" href="./imgs/ficon.jpg" type="image/jpg">
+
+    <style>
+            :root {
+            --cor-principal: #d5006d;
+            --cor-secundaria: #f06292;
+            --cor-fundo: #ffeef8;
+            --cor-texto: #333;
+            --cor-destaque: #880e4f;
+            --cor-clara: #fff;
+            --sombra-suave: 0 4px 15px rgba(0,0,0,0.1);
+            --sombra-media: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, var(--cor-fundo) 0%, #fff5fb 100%);
+            color: var(--cor-texto);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .conteudo {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: deslizarParaCima 0.8s ease;
+        }
+
+        .navegacao {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--cor-clara);
+            padding: 15px;
+            box-shadow: var(--sombra-suave);
+            z-index: 1000;
+            animation: deslizarParaBaixo 0.5s ease;
+        }
+
+        .navegacao ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+
+        .logo {
+            font-size: 2.5em;
+            text-align: center;
+            color: var(--cor-principal);
+            margin: 100px 0 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: aparecer 1s ease;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo span {
+            color: var(--cor-destaque);
+        }
+
+        .titulo-secao {
+            font-size: 2.5em;
+            color: var(--cor-secundaria);
+            margin: 40px 0;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .titulo-secao::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--cor-principal);
+            animation: expandirLinha 0.8s ease;
+        }
+
+        .subtitulo {
+            font-size: 1.8em;
+            color: var(--cor-destaque);
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .texto {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: var(--cor-texto);
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .codigo {
+            background-color: var(--cor-clara);
+            border: 2px solid var(--cor-principal);
+            padding: 25px;
+            display: block;
+            margin: 30px auto;
+            font-family: 'Consolas', monospace;
+            color: var(--cor-destaque);
+            border-radius: 15px;
+            max-width: 600px;
+            box-shadow: var(--sombra-suave);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .codigo::before {
+            content: 'JSON';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--cor-principal);
+            color: var(--cor-clara);
+            padding: 5px 15px;
+            border-bottom-left-radius: 10px;
+            font-size: 0.8em;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .codigo:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: var(--sombra-media);
+        }
+
+        .link {
+            color: var(--cor-principal);
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 2px;
+            font-weight: 500;
+        }
+
+        .link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--cor-principal);
+            transition: width 0.3s ease;
+        }
+
+        .link:hover::after {
+            width: 100%;
+        }
+
+        .cartao-creditos {
+            background: var(--cor-clara);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px auto;
+            max-width: 800px;
+            box-shadow: var(--sombra-suave);
+            transform: translateY(0);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cartao-creditos::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--cor-principal), var(--cor-secundaria));
+        }
+
+        .cartao-creditos:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--sombra-media);
+        }
+
+        .desenvolvedor {
+            margin: 25px 0;
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(213, 0, 109, 0.05);
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes deslizarParaCima {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes deslizarParaBaixo {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes expandirLinha {
+            from { width: 0; }
+            to { width: 100px; }
+        }
+
+        @keyframes pulsar {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .pulsar {
+            animation: pulsar 2s infinite;
+        }
+
+        @media (max-width: 768px) {
+            .logo { font-size: 2em; margin-top: 80px; }
+            .titulo-secao { font-size: 2em; }
+            .subtitulo { font-size: 1.5em; }
+            .texto { font-size: 1.1em; }
+            .conteudo { padding: 15px; }
+            .cartao-creditos { padding: 20px; }
+            .navegacao ul { gap: 15px; }
+        }
+        a{
+          text-decoration: none;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navegacao">
+        <ul>
+            <li><a href="#inicio" class="link">Início</a></li>
+            <li><a href="#documentacao" class="link">Documentação</a></li>
+            <li><a href="#api" class="link">API</a></li>
+            <li><a href="#creditos" class="link">Créditos</a></li>
+            <li><a href="#licenças" class="link">Licenças</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+        <h1 id="inicio" class="logo">Axolotl<span>.dev</span></h1>
+
+        <p class="texto">
+            O Axolotl é um sistema de motor de busca Open Source desenvolvido para proporcionar 
+            pesquisas rápidas e privadas, priorizando a segurança e eficiência dos usuários.
+        </p>
+
+        <h2 id="documentacao" class="titulo-secao">Documentação do Ambiente</h2>
+
+        <h3 class="subtitulo">Rede de Busca Alternativa (R.B.A)</h3>
+
+        <p class="texto">
+            A R.B.A é um recurso avançado do nosso sistema que permite realizar 
+            pesquisas em bancos de dados JSON de forma integrada e eficiente 
+            através do Axolotl.
+        </p>
+
+        <pre class="codigo">
+{
+    "name": "BambooHR",
+    "url": "https://www.bamboohr.com",
+    "description": "Software de gerenciamento de recursos humanos."
+}</pre>
+
+        <p class="texto">Esta é a estrutura padrão de uma R.B.A, otimizada para máxima eficiência.</p>
+
+        <h2 id="api" class="titulo-secao">API Axolotl</h2>
+
+        <p class="texto">
+            Disponibilizamos uma API gratuita para integração com nosso banco de dados de pesquisa.<br>
+            Acesse através do endpoint:
+        </p>
+        <a href="./data/main.json" target="_blank" class="link texto">
+            ./data/main.json
+        </a>
+
+        <h2 id="creditos" class="titulo-secao">Créditos</h2>
+        <div class="cartao-creditos">
+            <p class="texto">Desenvolvedores que contribuíram significativamente para o projeto:</p>
+
+            <div class="desenvolvedor">
+                <p class="texto">
+                    <strong>VOID</strong><br>
+                    Desenvolvedor fundador e criador da primeira distribuição do Axolotl
+                </p>
+            </div>
+
+            <div class="desenvolvedor">
+                <p class="texto">
+                    <strong>Ravy</strong><br>
+                    Desenvolvedor do Amoracoin e criador do MelScript.<br>
+                    <p class="texto">
+                        <strong>Projetos:</strong><br>
+                        <a href="./projects/amoracoin/index.html" target="_blank" class="link">Amora Coin</a><br>
+                        <a href="./projects/melscript/index.html" target="_blank" class="link">Mel Script</a>
+                    </p>
+                </p>
+            </div>
+        </div>
+
+        <h3 id="licenças" class="subtitulo">Licenças de Software</h3>
+        <div>
+            <a class="texto" href="./licenças/lla.txt">Licença Liberal Axolotl (LLA)</a><br>
+            <a class="texto" href="./licenças/rrl.txt">Licença Restritiva Axolotl (LLR)</a><br>
+            <a class="texto" href="./licenças/MIT.TXT">MIT Licença</a>
+        </div>
+    </div>
+</body>
+</html>

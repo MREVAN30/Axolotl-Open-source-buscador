@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./imgs/ficon.jpg" type="image/jpg">
+  <title>Axolotl</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffeef8;
+      color: #d5006d;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    #busck {
+      width: 250px;
+      padding: 10px;
+      border: 2px solid #d5006d; 
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    #search-button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #d5006d; 
+      color: white;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    #search-button:hover {
+      background-color: #a40050; 
+      }
+    #results {
+      margin-top: 30px;
+      text-align: left;
+    }
+    .result-item {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #d5006d;
+      border-radius: 5px;
+      background-color: white;
+    }
+    .result-item a {
+      color: #d5006d;
+      text-decoration: none;
+    }
+    body.dark {
+      background-color: #1b1b1b;
+      color: #f1f1f1;
+    }
+    body.dark #busck {
+      border: 2px solid #f1f1f1;
+      background-color: #333;
+      color: #f1f1f1;
+    }
+    body.dark #search-button {
+      background-color: #f1f1f1;
+      color: #1b1b1b;
+    }
+    body.dark .result-item {
+      background-color: #444;
+      border: 1px solid #f1f1f1;
+    }
+    body.dark .result-item a {
+      color: #f1f1f1;
+    }
+   a{
+           color: #d5006d;
+      text-decoration: none;
+   } 
+    
+  </style>
+</head>
+<body>
+  
+  <h1 id="title">Axolotl</h1>
+  <input id="busck" type="text" placeholder="Digite sua busca aqui...">
+  <br>
+  <button id="search-button">Buscar</button>
+  
+  <div id="results"></div>
+
+  <hr>
+  <p id="tema" style="cursor: pointer;">Modo Escuro: Desativado</p>
+  <a href="#" id="import-button">Importar rede de busca</a>
+  <p id="cona"> Conselho do axolot.</p>
+  
+  <a href="./dev.HTML"> axolotl dev</a>
+  <br>
+  <select id="language-selector">
+    <option value="en">English</option>
+    <option value="pt">Português</option>
+  </select>
+
+  <script src="./lib/axolotl.js"></script>
+
+  <script>
+    let sites = [];
+    const tema = document.getElementById("tema");
+    const corpo = document.querySelector("body");
+    const languageSelector = document.getElementById("language-selector");
+    const Conselho = [
+      "Nunca desista.",
+      // (outros conselhos...)
+    ];
+
+    function sorteio() {
+      const ram = Math.floor(Math.random() * Conselho.length); 
+      alert(Conselho[ram]);
+    }
+
+    document.getElementById('cona').addEventListener('click', sorteio);
+    const translations = {
+      en: {
+        title: "Axolotl",
+        placeholder: "Type your search here...",
+        search: "Search",
+        noResults: "No results found.",
+        darkModeOn: "Dark Mode: Activated",
+        darkModeOff: "Dark Mode: Deactivated",
+        importPrompt: "Enter the URL of the alternative search network (r.d.a)",
+        importSuccess: "Search network imported successfully!"
+      },
+      pt: {
+        title: "Axolotl",
+        placeholder: "Digite sua busca aqui...",
+        search: "Buscar",
+        noResults: "Nenhum resultado encontrado.",
+        darkModeOn: "Modo Escuro: Ativado",
+        darkModeOff: "Modo Escuro: Desativado",
+        importPrompt: "Digite a URL da rede de busca alternativa (r.d.a)",
+        importSuccess: "Rede de busca importada com sucesso!"
+      }
+    };
+
+    async function loadSites(url) {
+      try {
+        const response = await fetch(url);
+        sites = await response.json();
+        console.log('Sites carregados:', sites);
+      } catch (error) {
+        console.error('Erro 404: Não foi possível acessar a base de dados.', error);
+      }
+    }
+    
+    tema.addEventListener('click', function() {
+      corpo.classList.toggle('dark');
+      tema.textContent = corpo.classList.contains('dark') ? translations[languageSelector.value].darkModeOn : translations[languageSelector.value].darkModeOff;
+    });
+
+    languageSelector.addEventListener('change', function() {
+      updateLanguage();
+    });
+
+    function updateLanguage() {
+      const lang = languageSelector.value;
+      document.getElementById("title").textContent = translations[lang].title;
+      document.getElementById("busck").placeholder = translations[lang].placeholder;
+      document.getElementById("search-button").textContent = translations[lang].search;
+      tema.textContent = corpo.classList.contains('dark') ? translations[lang].darkModeOn : translations[lang].darkModeOff;
+    }
+
+    window.onload = () => loadSites('./json/main.json');
+
+    document.getElementById('search-button').addEventListener('click', function() {
+      const query = document.getElementById('busck').value.toLowerCase();
+      const resultsDiv = document.getElementById('results');
+      resultsDiv.innerHTML = ''; 
+      
+      const filteredResults = sites.filter(site =>
+        site.name.toLowerCase().includes(query) || site.description.toLowerCase().includes(query)
+      );
+
+      if (filteredResults.length > 0) {
+        filteredResults.forEach(site => {
+          const resultItem = document.createElement('div');
+          resultItem.className = 'result-item';
+          resultItem.innerHTML = `<a href="${site.url}" target="_blank">${site.name}</a> - ${site.description}`;
+          resultsDiv.appendChild(resultItem);
+        });
+      } else {
+        resultsDiv.innerHTML = `<p>${translations[languageSelector.value].noResults}</p>`;
+      }
+    });
+
+    document.getElementById('import-button').addEventListener('click', async function(event) {
+      event.preventDefault();
+      const url = prompt(translations[languageSelector.value].importPrompt);
+      if (url) {
+        await loadSites(url);
+        alert(translations[languageSelector.value].importSuccess);
+      }
+    });
+
+    
+  </script>
+
+</body>
+</html>

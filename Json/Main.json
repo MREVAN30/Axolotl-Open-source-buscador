@@ -1,0 +1,799 @@
+[
+  {
+    "name": "Google",
+    "url": "https://www.google.com",
+    "description": "O motor de busca mais popular do mundo."
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com",
+    "description": "Plataforma de compartilhamento de vídeos."
+  },
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com",
+    "description": "Rede social para conectar amigos e família."
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com",
+    "description": "Rede social focada em fotos e vídeos."
+  },
+  {
+    "name": "Twitter",
+    "url": "https://www.twitter.com",
+    "description": "Rede social para postagens rápidas."
+  },
+  {
+    "name": "Wikipedia",
+    "url": "https://www.wikipedia.org",
+    "description": "Enciclopédia online colaborativa."
+  },
+  {
+    "name": "Andromeda engine",
+    "url": "https://andromeda-engine.netlify.app/",
+    "description": "Engine mobile"
+  },
+  {
+    "name": "fnaf news(wa canal)",
+    "url": "https://whatsapp.com/channel/0029ValWTXaE50Ufa20uNq1h",
+    "description": "canal de fnaf fo WhatsApp"
+  },
+  {
+    "name": "fnaf rpg (gp)",
+    "url": "https://chat.whatsapp.com/DSPcnGTJpG595x4gMnQyPG",
+    "description": "grupo de rpg de fnaf"
+  },
+  {
+    "name": "conversa de devs(gp)",
+    "url": "https://chat.whatsapp.com/BklEIWFVhwu62B8TEj78uo",
+    "description": "grupo para devs"
+  },
+  {
+    "name": "Annie Cassidy Fandubs Notícias (wa canal)",
+    "url": "https://whatsapp.com/channel/0029VajIU216hENmdrM1vM3W",
+    "description": "Tudo sobre minhas fã dubs"
+  },
+  {
+    "name": "77 Studio (wa canal)",
+    "url": "https://whatsapp.com/channel/0029Vamw2KU8fewvi3UhwQ0e",
+    "description": "canal oficial da 77 Studio"
+  },
+  {
+    "name": "WhatsApp",
+    "url": "https://www.whatsapp.com",
+    "description": "site oficial do WhatsApp"
+  },
+  {
+    "name": "grabify",
+    "url": "https://grabify.link/",
+    "description": "Registrador de IP Criar ou rastrear URLs"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com",
+    "description": "Rede social para profissionais."
+  },
+  {
+    "name": "Reddit",
+    "url": "https://www.reddit.com",
+    "description": "Plataforma de agregação de conteúdo e discussão."
+  },
+  {
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com",
+    "description": "Rede social para descobrir e compartilhar ideias."
+  },
+  {
+    "name": "Quora",
+    "url": "https://www.quora.com",
+    "description": "Plataforma de perguntas e respostas."
+  },
+  {
+    "name": "Netflix",
+    "url": "https://www.netflix.com",
+    "description": "Serviço de streaming de filmes e séries."
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.com",
+    "description": "Site de comércio eletrônico."
+  },
+  {
+    "name": "eBay",
+    "url": "https://www.ebay.com",
+    "description": "Plataforma de leilões e vendas."
+  },
+  {
+    "name": "Spotify",
+    "url": "https://www.spotify.com",
+    "description": "Serviço de streaming de música."
+  },
+  {
+    "name": "Twitch",
+    "url": "https://www.twitch.tv",
+    "description": "Plataforma de streaming ao vivo, focada em jogos."
+  },
+  {
+    "name": "Slack",
+    "url": "https://slack.com",
+    "description": "Ferramenta de comunicação para equipes."
+  },
+  {
+    "name": "Dropbox",
+    "url": "https://www.dropbox.com",
+    "description": "Serviço de armazenamento em nuvem."
+  },
+  {
+    "name": "Trello",
+    "url": "https://trello.com",
+    "description": "Ferramenta de gerenciamento de projetos."
+  },
+  {
+    "name": "Canva",
+    "url": "https://www.canva.com",
+    "description": "Plataforma de design gráfico online."
+  },
+  {
+    "name": "Coursera",
+    "url": "https://www.coursera.org",
+    "description": "Plataforma de cursos online."
+  },
+  {
+    "name": "Udemy",
+    "url": "https://www.udemy.com",
+    "description": "Marketplace de cursos online."
+  },
+  {
+    "name": "Codecademy",
+    "url": "https://www.codecademy.com",
+    "description": "Plataforma para aprender programação."
+  },
+  {
+    "name": "Khan Academy",
+    "url": "https://www.khanacademy.org",
+    "description": "Plataforma educacional gratuita."
+  },
+  {
+    "name": "Skillshare",
+    "url": "https://www.skillshare.com",
+    "description": "Plataforma de aprendizado baseado em vídeo."
+  },
+  {
+    "name": "WordPress",
+    "url": "https://wordpress.org",
+    "description": "Sistema de gerenciamento de conteúdo."
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com",
+    "description": "Plataforma de publicação de artigos."
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com",
+    "description": "Plataforma para hospedagem de projetos de software."
+  },
+  {
+    "name": "Stack Overflow",
+    "url": "https://stackoverflow.com",
+    "description": "Comunidade para programadores e desenvolvedores."
+  },
+  {
+    "name": "Fiverr",
+    "url": "https://www.fiverr.com",
+    "description": "Marketplace para freelancers."
+  },
+  {
+    "name": "Upwork",
+    "url": "https://www.upwork.com",
+    "description": "Plataforma de freelancing."
+  },
+  {
+    "name": "Behance",
+    "url": "https://www.behance.net",
+    "description": "Rede social para criativos."
+  },
+  {
+    "name": "Dribbble",
+    "url": "https://dribbble.com",
+    "description": "Comunidade de designers."
+  },
+  {
+    "name": "Flickr",
+    "url": "https://www.flickr.com",
+    "description": "Plataforma de compartilhamento de fotos."
+  },
+  {
+    "name": "Imgur",
+    "url": "https://imgur.com",
+    "description": "Site para compartilhar imagens e memes."
+  },
+  {
+    "name": "Tumblr",
+    "url": "https://www.tumblr.com",
+    "description": "Plataforma de microblogging."
+  },
+  
+    {
+    "name": "mel script",
+    "url": "https://mel-script.vercel.app",
+    "description": "linguagem de programação brasileira."
+  },
+  
+  
+  {
+    "name": "Vimeo",
+    "url": "https://www.vimeo.com",
+    "description": "Plataforma de compartilhamento de vídeos."
+  },
+  {
+    "name": "SoundCloud",
+    "url": "https://www.soundcloud.com",
+    "description": "Plataforma de compartilhamento de áudio."
+  },
+  {
+    "name": "TripAdvisor",
+    "url": "https://www.tripadvisor.com",
+    "description": "Site de avaliações de viagens."
+  },
+  {
+    "name": "Yelp",
+    "url": "https://www.yelp.com",
+    "description": "Plataforma de avaliações de negócios."
+  },
+  {
+    "name": "Booking.com",
+    "url": "https://www.booking.com",
+    "description": "Site de reservas de hotéis."
+  },
+  {
+    "name": "Airbnb",
+    "url": "https://www.airbnb.com",
+    "description": "Plataforma de aluguel de acomodações."
+  },
+  {
+    "name": "Zillow",
+    "url": "https://www.zillow.com",
+    "description": "Site de imóveis."
+  },
+  {
+    "name": "Indeed",
+    "url": "https://www.indeed.com",
+    "description": "Site de busca de empregos."
+  },
+  {
+    "name": "Monster",
+    "url": "https://www.monster.com",
+    "description": "Portal de empregos."
+  },
+  {
+    "name": "Glassdoor",
+    "url": "https://www.glassdoor.com",
+    "description": "Site de avaliações de empresas."
+  },{
+    "name": "LinkedIn Learning",
+    "url": "https://www.linkedin.com/learning/",
+    "description": "Plataforma de aprendizado online com cursos."
+  },
+  {
+    "name": "HubSpot",
+    "url": "https://www.hubspot.com",
+    "description": "Software de marketing e vendas."
+  },
+  {
+    "name": "Mailchimp",
+    "url": "https://mailchimp.com",
+    "description": "Plataforma de marketing por e-mail."
+  },
+  {
+    "name": "Constant Contact",
+    "url": "https://www.constantcontact.com",
+    "description": "Serviço de marketing por e-mail."
+  },
+  {
+    "name": "SurveyMonkey",
+    "url": "https://www.surveymonkey.com",
+    "description": "Plataforma para criar pesquisas online."
+  },
+  {
+    "name": "Eventbrite",
+    "url": "https://www.eventbrite.com",
+    "description": "Plataforma para gerenciamento de eventos."
+  },
+  {
+    "name": "Trello",
+    "url": "https://trello.com",
+    "description": "Ferramenta de gerenciamento de projetos."
+  },
+  {
+    "name": "Asana",
+    "url": "https://asana.com",
+    "description": "Ferramenta de gerenciamento de tarefas."
+  },
+  {
+    "name": "Basecamp",
+    "url": "https://basecamp.com",
+    "description": "Software de gerenciamento de projetos."
+  },
+  {
+    "name": "Jira",
+    "url": "https://www.atlassian.com/software/jira",
+    "description": "Ferramenta de gerenciamento de projetos e rastreamento de problemas."
+  },
+  {
+    "name": "Monday.com",
+    "url": "https://monday.com",
+    "description": "Plataforma de gerenciamento de trabalho."
+  },
+  {
+    "name": "Notion",
+    "url": "https://www.notion.so",
+    "description": "Aplicativo de organização e colaboração."
+  },
+  {
+    "name": "Evernote",
+    "url": "https://evernote.com",
+    "description": "Aplicativo de anotações."
+  },
+  {
+    "name": "Google Drive",
+    "url": "https://drive.google.com",
+    "description": "Armazenamento em nuvem e colaboração."
+  },
+  {
+    "name": "OneDrive",
+    "url": "https://onedrive.live.com",
+    "description": "Armazenamento em nuvem da Microsoft."
+  },
+  {
+    "name": "Box",
+    "url": "https://www.box.com",
+    "description": "Serviço de armazenamento em nuvem."
+  },
+  {
+    "name": "WeTransfer",
+    "url": "https://wetransfer.com",
+    "description": "Serviço para enviar arquivos grandes."
+  },
+  {
+    "name": "Slack",
+    "url": "https://slack.com",
+    "description": "Aplicativo de comunicação para equipes."
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.com",
+    "description": "Plataforma de comunicação para gamers e comunidades."
+  },
+  {
+    "name": "Microsoft Teams",
+    "url": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+    "description": "Ferramenta de comunicação e colaboração da Microsoft."
+  },
+  {
+    "name": "Zoom",
+    "url": "https://zoom.us",
+    "description": "Plataforma de videoconferência."
+  },
+  {
+    "name": "Skype",
+    "url": "https://www.skype.com",
+    "description": "Aplicativo de chamadas e mensagens."
+  },
+  {
+    "name": "Google Meet",
+    "url": "https://meet.google.com",
+    "description": "Serviço de videoconferência do Google."
+  },
+  {
+    "name": "Adobe Creative Cloud",
+    "url": "https://www.adobe.com/creativecloud.html",
+    "description": "Conjunto de aplicativos de design e criação."
+  },
+  {
+    "name": "Canva",
+    "url": "https://www.canva.com",
+    "description": "Ferramenta de design gráfico online."
+  },
+  {
+    "name": "Figma",
+    "url": "https://www.figma.com",
+    "description": "Ferramenta de design e prototipagem colaborativa."
+  },
+  {
+    "name": "Sketch",
+    "url": "https://www.sketch.com",
+    "description": "Ferramenta de design de interface."
+  },
+  {
+    "name": "InVision",
+    "url": "https://www.invisionapp.com",
+    "description": "Plataforma de design e prototipagem."
+  },
+  {
+    "name": "Trello",
+    "url": "https://trello.com",
+    "description": "Aplicativo de gerenciamento de projetos."
+  },
+  {
+    "name": "Zapier",
+    "url": "https://zapier.com",
+    "description": "Automatização de tarefas entre aplicativos."
+  },
+  {
+    "name": "IFTTT",
+    "url": "https://ifttt.com",
+    "description": "Automatização de ações entre serviços."
+  },
+  {
+    "name": "Buffer",
+    "url": "https://buffer.com",
+    "description": "Gerenciamento de redes sociais."
+  },
+  {
+    "name": "Hootsuite",
+    "url": "https://hootsuite.com",
+    "description": "Gerenciamento de redes sociais."
+  },
+  {
+    "name": "Sprout Social",
+    "url": "https://sproutsocial.com",
+    "description": "Gerenciamento de redes sociais."
+  },
+  {
+    "name": "Yoast SEO",
+    "url": "https://yoast.com",
+    "description": "Plugin de SEO para WordPress."
+  },
+  {
+    "name": "Moz",
+    "url": "https://moz.com",
+    "description": "Ferramentas de SEO e marketing."
+  },
+  {
+    "name": "Ahrefs",
+    "url": "https://ahrefs.com",
+    "description": "Ferramenta de SEO e análise de backlinks."
+  },
+  {
+    "name": "SEMrush",
+    "url": "https://www.semrush.com",
+    "description": "Plataforma de marketing digital."
+  },
+  {
+    "name": "Google Analytics",
+    "url": "https://analytics.google.com",
+    "description": "Ferramenta de análise de dados de websites."
+  },
+  {
+    "name": "Crazy Egg",
+    "url": "https://www.crazyegg.com",
+    "description": "Ferramenta de análise de comportamento do usuário."
+  },
+  {
+    "name": "Hotjar",
+    "url": "https://www.hotjar.com",
+    "description": "Ferramenta de análise de comportamento do usuário."
+  },
+  {
+    "name": "Mailchimp",
+    "url": "https://mailchimp.com",
+    "description": "Plataforma de marketing por e-mail."
+  },
+  {
+    "name": "SendinBlue",
+    "url": "https://www.sendinblue.com",
+    "description": "Serviço de marketing por e-mail e SMS."
+  },
+  {
+    "name": "GetResponse",
+    "url": "https://www.getresponse.com",
+    "description": "Serviço de marketing por e-mail."
+  },
+  {
+    "name": "AWeber",
+    "url": "https://www.aweber.com",
+    "description": "Plataforma de e-mail marketing."
+  },
+  {
+    "name": "Constant Contact",
+    "url": "https://www.constantcontact.com",
+    "description": "Serviço de marketing por e-mail."
+  },
+  {
+    "name": "ConvertKit",
+    "url": "https://convertkit.com",
+    "description": "Plataforma de marketing por e-mail para criadores."
+  },
+  {
+    "name": "BambooHR",
+    "url": "https://www.bamboohr.com",
+    "description": "Software de gerenciamento de recursos humanos."
+  },
+  {
+    "name": "Workable",
+    "url": "https://www.workable.com",
+    "description": "Plataforma de recrutamento."
+  },
+  {
+    "name": "LinkedIn Talent Solutions",
+    "url": "https://www.linkedin.com/talent/",
+    "description": "Ferramenta de recrutamento do LinkedIn."
+  },
+  {
+    "name": "Slack",
+    "url": "https://slack.com",
+    "description": "Aplicativo de comunicação para equipes."
+  },
+  {
+    "name": "Zoom",
+    "url": "https://zoom.us",
+    "description": "Plataforma de videoconferência."
+  },
+  {
+    "name": "Google Calendar",
+    "url": "https://calendar.google.com",
+    "description": "Aplicativo de calendário do Google."
+  },
+  {
+    "name": "G1",
+    "url": "https://g1.globo.com/",
+    "description": "o portal de notícias oficial da Globo"
+  },
+    {
+    "name": "amoracoin(criptomoeda)",
+    "url": "https://amoracoin.vercel.app/",
+    "description": "Amoracoin é uma rede de pagamentos inovadora e um novo tipo de moeda digital."
+  },
+    {
+    "name": "Microsoft Wikipédia",
+    "url": "https://pt.m.wikipedia.org/wiki/Microsoft.", 
+    "description": "wiki oficial da Microsoft."
+
+  },
+    {
+    "name": "tech todo",
+    "url": "https://www.techtudo.com.br/", 
+    "description": "notícias sobre tecnologia"
+
+  },
+  
+      {
+    "name": "discord",
+    "url": " discord.com.", 
+    "description": "site oficial do app discord"
+
+  },
+      {
+    "name": "termux.org",
+    "url": "https://termux.dev", 
+    "description": "emulador de terminal Linux para Android"
+
+  },
+        {
+    "name": "termux f droid",
+    "url": "https://f-droid.org/pt_BR/packages/com.termux/", 
+    "description": "baixe o termux"
+
+  },
+      {
+    "name": "GGY BOT (GP) ",
+    "url": "https://chat.whatsapp.com/JujxY8QgZH2JCgmsxaaoYu", 
+    "description": "teste nosso bot gratuitamente"
+
+  },
+        {
+    "name": "ggy bot(wa canal) ",
+    "url":"https://whatsapp.com/channel/0029VarJFfTKrWQqdoJwLm21", 
+    "description": "canal oficial do ggy bot"
+
+  },
+        {
+    "name": "f droid",
+    "url": "https://f-droid.org", 
+    "description": "loja de apps  Android"
+
+  },
+  {
+ "name":"base 404(jogo de navegador",
+ "url": "https://base404.netlify.app/", 
+ "description": "jogo.de gerenciamento de rsvusos"
+
+  },
+  {
+      "name":"prot code", 
+    "url": "https://prot-code.vercel.app/pagina_criptografar", 
+    "description": "Proteja o código-fonte do seu site com o ProtCode. Converta seu código-fonte em uma versão segura e otimizada para evitar acessos não autorizados e proteger sua propriedade intelectual."
+
+  },
+  {
+      "name": "save for games",
+    "url": "https://savesforgames.com", 
+    "description": " save de jogos"
+
+  },
+    {
+      "name": "play book",
+    "url": "https://playbook.gamejolt.io/sobre.html", 
+    "description": "loja livros virtuais"
+
+  },
+      {
+      "name": "localizeip",
+    "url": "https://localizeip.com.br/", 
+    "description": "localize endereços ip"
+
+  },
+
+  {
+    "name": "Bing",
+    "url": "https://www.bing.com",
+    "description": "Motor de busca da Microsoft."
+  },
+  {
+    "name": "Yahoo",
+    "url": "https://www.yahoo.com",
+    "description": "Portal de notícias e busca."
+  },
+  {
+    "name": "DuckDuckGo",
+    "url": "https://www.duckduckgo.com",
+    "description": "Motor de busca focado em privacidade."
+  },
+  {
+    "name": "Redbubble",
+    "url": "https://www.redbubble.com",
+    "description": "Marketplace para arte e design."
+  },
+  {
+    "name": "Etsy",
+    "url": "https://www.etsy.com",
+    "description": "Marketplace para produtos artesanais e vintage."
+  },
+  {
+    "name": "Quora",
+    "url": "https://www.quora.com",
+    "description": "Plataforma de perguntas e respostas."
+  },
+  {
+    "name": "Stack Exchange",
+    "url": "https://stackexchange.com",
+    "description": "Rede de perguntas e respostas sobre diferentes temas."
+  },
+  {
+    "name": "Tripadvisor",
+    "url": "https://www.tripadvisor.com",
+    "description": "Avaliações e recomendações de viagens."
+  },
+  {
+    "name": "IMDb",
+    "url": "https://www.imdb.com",
+    "description": "Banco de dados sobre filmes, séries e celebridades."
+  },
+  {
+    "name": "Yandex",
+    "url": "https://www.yandex.com",
+    "description": "Motor de busca e serviços online da Rússia."
+  },
+  {
+    "name": "Mail.ru",
+    "url": "https://mail.ru",
+    "description": "Provedor de serviços de e-mail e portal de internet."
+  },
+  {
+    "name": "VK",
+    "url": "https://vk.com",
+    "description": "Rede social popular na Rússia."
+  },
+  {
+    "name": "Fandom",
+    "url": "https://www.fandom.com",
+    "description": "Plataforma de wikis e comunidade de fãs."
+  },
+  {
+    "name": "DeviantArt",
+    "url": "https://www.deviantart.com",
+    "description": "Comunidade online para artistas e amantes da arte."
+  },
+  {
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com",
+    "description": "Rede social para descobrir e compartilhar ideias."
+  },
+  {
+    "name": "Behance",
+    "url": "https://www.behance.net",
+    "description": "Plataforma para mostrar e descobrir trabalhos criativos."
+  },
+  {
+    "name": "WordPress.com",
+    "url": "https://www.wordpress.com",
+    "description": "Plataforma de blogs e criação de sites."
+  },
+  {
+    "name": "Blogger",
+    "url": "https://www.blogger.com",
+    "description": "Plataforma de blogs do Google."
+  },
+  {
+    "name": "Tumblr",
+    "url": "https://www.tumblr.com",
+    "description": "Plataforma de microblogging."
+  },
+  {
+    "name": "SlideShare",
+    "url": "https://www.slideshare.net",
+    "description": "Plataforma para compartilhar apresentações."
+  },
+  {
+    "name": "Bitbucket",
+    "url": "https://bitbucket.org",
+    "description": "Plataforma de hospedagem de projetos de software."
+  },
+  {
+    "name": "GitLab",
+    "url": "https://gitlab.com",
+    "description": "Plataforma de DevOps e hospedagem de código."
+  },
+  {
+    "name": "Scribd",
+    "url": "https://www.scribd.com",
+    "description": "Plataforma de leitura e compartilhamento de documentos."
+  },
+  {
+    "name": "Archive.org",
+    "url": "https://archive.org",
+    "description": "Arquivo da internet que preserva conteúdos digitais."
+  },
+  {
+    "name": "Coursera",
+    "url": "https://www.coursera.org",
+    "description": "Plataforma de cursos online."
+  },
+  {
+    "name": "Khan Academy",
+    "url": "https://www.khanacademy.org",
+    "description": "Plataforma de aprendizado gratuito."
+  },
+  {
+    "name": "Skillshare",
+    "url": "https://www.skillshare.com",
+    "description": "Plataforma de aprendizado em vídeo."
+  },
+  {
+    "name": "Codecademy",
+    "url": "https://www.codecademy.com",
+    "description": "Aprenda a programar online."
+  },
+  {
+    "name": "W3Schools",
+    "url": "https://www.w3schools.com",
+    "description": "Tutoriais de desenvolvimento web."
+  },
+  {
+    "name": "Udacity",
+    "url": "https://www.udacity.com",
+    "description": "Plataforma de cursos em tecnologia."
+  },
+  {
+    "name": "Pluralsight",
+    "url": "https://www.pluralsight.com",
+    "description": "Plataforma de aprendizado em tecnologia."
+  },
+  {
+    "name": "metadados",
+    "url": "/json/metadados.json",
+    "description": "Metadados do buscador"
+  }, 
+  
+  
+  
+  {
+    "name": "Calendly",
+    "url": "https://calendly.com",
+    "description": "Ferramenta de agendamento de reuniões."
+  }
+
+  
+    ]
